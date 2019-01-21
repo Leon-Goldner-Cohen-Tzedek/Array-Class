@@ -3,10 +3,9 @@
 #ifndef MSORT_H
 #define MSORT_H
 
-void merge(int left, int mid, int right)
+void merge(Array<int>& data, int left, int mid, int right)
 {
-
-  sorted(this->size);
+  Array<int> sorted = Array<int>(data.Size());
   int i = left;
   int j = mid + 1;
   int k = left;
@@ -27,11 +26,13 @@ void merge(int left, int mid, int right)
     sorted[k++] = data[j++];
   }
 
-  for (i = left; i < k; i++) data[i] = sorted[i];
-
+  for (i = left; i < k; i++)
+  {
+    data[i] = sorted[i];
+  }
 }
 
-void mSort(int left, int right)
+void mSort(Array<int>& data, int left, int right)
 {
   int mid;
 
@@ -39,9 +40,9 @@ void mSort(int left, int right)
   {
     mid = (left + right) / 2;
 
-    mSort(left, mid);
-    mSort(mid + 1, right);
-    mSort(left, mid, right);
+    mSort(data, left, mid);
+    mSort(data, mid + 1, right);
+    merge(data, left, mid, right);
   }
 }
 

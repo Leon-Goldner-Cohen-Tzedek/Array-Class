@@ -7,6 +7,6 @@ For example:
 
 Array x = Array(100, 16);// makes an array with 100 indexes set to 16
 
+mSort(x, left, right)//sort before you binSearch
+
 cout << binSearch(3, x, 0, x.Size() - 1) << endl; // searches for 3 in the array and prints 0
-
-

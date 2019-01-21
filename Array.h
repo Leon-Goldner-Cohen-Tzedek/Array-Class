@@ -151,7 +151,12 @@ public:
 
  ~Array()
  {
-   delete[] this->data;
+   if (this->data != NULL)
+   {
+     delete[] this->data;
+     this->data = NULL;
+   }
+
  }
 
 };
