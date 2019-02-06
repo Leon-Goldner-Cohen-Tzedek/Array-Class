@@ -2,8 +2,9 @@
 
 using namespace std;
 
-#ifndef ARRAY_H
-#define ARRAY_H
+#ifndef ARRAY_H_INCLUDED
+#define ARRAY_H_INCLUDED
+
 class ArrayException : public exception {};
 
 class ArrayIndexException : public ArrayException {} IndexException; // throw IndexException catch ArrayIndexException

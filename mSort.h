@@ -1,7 +1,7 @@
 #include "Array.h"
 
-#ifndef MSORT_H
-#define MSORT_H
+#ifndef MSORT_H_INCLUDED
+#define MSORT_H_INCLUDED
 
 void merge(Array<int>& data, int left, int mid, int right)
 {
