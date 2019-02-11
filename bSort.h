@@ -3,23 +3,31 @@
 #ifndef BSORT_H_INCLUDED
 #define BSORT_H_INCLUDED
 
+void swap(Array<int>& array, int index0, int index1)
+{
+  int temp = array[index0];
+  array[index0] = array[index1];
+  array[index1] = temp;
+}
+
 void bSort(Array<int>& array)
 {
 
-  bool swapped = false;
+  bool swapped;
 
-  for(int j = 0; j < array.Size(); j++)
+  for (int i = 0; i < array.Size() - 1; i++)
   {
-    for(int i = 0; i < array.Size() - j; i++)
+    //swapped = true;
+
+    for (int j = 0; j < array.Size() - i - 1; i++)
     {
-      swapped = false;
-      if (array[i] > array[i + 1])
+      if (array[j] > array[j + 1])
       {
-        array[i+1] = array[i];
-        array[i] = array[i+1];
+        swap(array, j, j + 1);
         swapped = true;
       }
     }
+
     if (swapped == false)
     {
       break;

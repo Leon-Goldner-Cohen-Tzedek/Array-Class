@@ -39,7 +39,7 @@ public:
     }
   }
 
-  bool Contains(X item)// get this to work
+  bool Contains(X item)
   {
     for (int i = 0; i < this->size; i++)
     {
