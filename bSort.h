@@ -1,5 +1,5 @@
 #include "Array.h"
-
+using namespace std;
 #ifndef BSORT_H_INCLUDED
 #define BSORT_H_INCLUDED
 
@@ -17,9 +17,8 @@ void bSort(Array<int>& array)
 
   for (int i = 0; i < array.Size() - 1; i++)
   {
-    //swapped = true;
 
-    for (int j = 0; j < array.Size() - i - 1; i++)
+    for (int j = 0; j < array.Size() - i - 1; j++)
     {
       if (array[j] > array[j + 1])
       {
@@ -27,7 +26,6 @@ void bSort(Array<int>& array)
         swapped = true;
       }
     }
-
     if (swapped == false)
     {
       break;
