@@ -1,5 +1,5 @@
 #include "Array.h"
-using namespace std;
+
 #ifndef BSORT_H_INCLUDED
 #define BSORT_H_INCLUDED
 
