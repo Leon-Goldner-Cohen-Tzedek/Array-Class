@@ -1,4 +1,5 @@
 # Array-Class
+[![Build Status](https://travis-ci.org/Leon-Goldner-Cohen-Tzedek/Array-Class.svg?branch=master)](https://travis-ci.org/Leon-Goldner-Cohen-Tzedek/Array-Class)
 An array wrapper for C++
 
 binSearch.h is a binary search function that works with Array.h, just include them in the same main.cpp and they should work together.
