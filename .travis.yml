@@ -1,4 +1,5 @@
 # works on Precise and Trusty
+language: c++
     - os: linux
       addons:
         apt:
