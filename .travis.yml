@@ -1,4 +1,3 @@
 language: cpp
 os: linux
-compiler: g++ 7.3
-script:
+compiler: g++
