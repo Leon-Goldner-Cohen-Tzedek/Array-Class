@@ -2,6 +2,6 @@ language: cpp
 os: linux
 compiler: g++
 script:
-  -g++ Array.h
-  -g++ mSort.h
-  -g++ bSort.h
+  g++ Array.h
+  g++ mSort.h
+  g++ bSort.h
