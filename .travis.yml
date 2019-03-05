@@ -1,4 +1,7 @@
 language: cpp
 os: linux
 compiler: g++
-script: g++ main.cpp
+script:
+  -g++ Array.h
+  -g++ mSort.h
+  -g++ bSort.h
