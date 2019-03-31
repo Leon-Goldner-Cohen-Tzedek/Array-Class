@@ -15,9 +15,10 @@ class ArrayStack
 private:
   Array<X>* stack;
   int head;
+
 public:
-  void Push(X& value)
-  { //two exceptions UNDERFLOW (too little values ) and OVERFLOW (too many values)
+  void Push(X value)
+  {
     try
     {
       if (stack->Size() == head) throw StackOverflow;
@@ -47,6 +48,11 @@ public:
     return (*stack)[this->head - 1];
     }
     catch (ArrayStackUnderflow e) {cout << "StackUnderflow" << endl;}
+  }
+
+  int Head()
+  {
+    return this->head;
   }
 
   ArrayStack()
